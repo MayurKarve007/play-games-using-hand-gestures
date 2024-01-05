@@ -1,0 +1,324 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+
+        .img {
+            width: 500px;
+            height: 400px;
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light m-4">
+        <div class="container-fluid">
+            <div class="logo"><a href="index.html"><img src="static/images/logo.png"></a></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <hr> -->
+{% extends "layout.html" %} {% block content %}
+<div
+  class="bg-secondary text-white"
+  style="
+    padding-inline: 15%;
+    height: 335px;
+    padding-block: 50px;
+    margin-inline: 5%;
+    border-radius: 10px;
+  "
+>
+  <div
+    id="carouselExampleSlidesOnly "
+    style="margin-bottom: 40px; height: 250px"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="video_text">Hand Gesture</h1>
+            <h1 class="controller_text">Recognition</h1>
+            <p class="banner_text">
+              Hand gesture recognition (HGR) is a rapidly developing field of
+              computer vision that has the potential to revolutionize the way we
+              interact with computers.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div style="width: 500px; height: 300px" class="image_1">
+              <img
+                style="width: 300px; height: 260px; object-fit: scale-down"
+                class="rounded mx-auto d-block"
+                src="static/images/img-1.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="video_text">Hand Gesture</h1>
+            <h1 class="controller_text">Recognition</h1>
+            <p class="banner_text">
+              HGR systems can interpret human hand gestures and translate them
+              into computer commands, making it possible to control devices
+              without the need for physical contact.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div style="width: 500px; height: 300px" class="image_1">
+              <img
+                style="width: 300px; height: 260px; object-fit: scale-down"
+                class="rounded mx-auto d-block"
+                src="static/images/img-1.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div
+  class="rounded-3 box"
+  style="
+    border: 2px solid black;
+    background-color: #00ffff;
+    margin-inline: 5%;
+    border-radius: 10px;
+  "
+>
+  <div
+    id="carouselExampleDark"
+    sty
+    class="carousel carousel-dark slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide-to="3"
+        aria-label="Slide 4"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide-to="4"
+        aria-label="Slide 5"
+      ></button>
+    </div>
+    <div
+      class="carousel-inner"
+      style="
+        border: 2px solid gray;
+        border-radius: 10px;
+        background-color: bg-dark bg-gradient;
+        transition-delay: 2s;
+        animation-delay: 2s;
+      "
+    >
+      <!-- <div class="carousel-item active" data-bs-interval="2000">
+                    <a href=""><img class="img"
+                            src="https://static.wikia.nocookie.net/hillclimbracing2_gamepedia_en/images/f/fc/Controls.png/revision/latest/scale-to-width-down/366?cb=20200609145347"
+                            class="rounded mx-auto d-block" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div> -->
+      <div
+        class="carousel-item active"
+        data-bs-interval="2000"
+        style="background-color: #76f5f5"
+      >
+        <a href="./pingpong"
+          ><img
+            class="img"
+            style="border: 2px solid black; border-radius: 5px"
+            src="static/images/pong.png"
+            class="rounded mx-auto d-block"
+            alt="..."
+        /></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>PingPong</h5>
+          <p>Let's Play PingPong</p>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+        data-bs-interval="2000"
+        style="background-color: #76f5f5"
+      >
+        <a href="./1vs1pingpong"
+          ><img
+            class="img"
+            style="border: 2px solid black; border-radius: 5px"
+            src="static/images/1vs1pong.png"
+            class="rounded mx-auto d-block"
+            alt="..."
+        /></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>1 vs 1 PingPong</h5>
+          <p>Let's make a Battle with my friend to play PingPong</p>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+        style="background-color: #76f5f5"
+        data-bs-interval="2000"
+      >
+        <a href="./hillclimb"
+          ><img
+            class="img"
+            style="border: 2px solid black; border-radius: 5px"
+            src="static/images/hillclimb.jpg"
+            class="rounded mx-auto d-block"
+            alt="..."
+        /></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>HillClimbRacing</h5>
+          <p>Let's drive car using Hand</p>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+        data-bs-interval="2000"
+        style="background-color: #76f5f5"
+      >
+        <a href="./fruit"
+          ><img
+            class="img"
+            style="border: 2px solid black; border-radius: 5px"
+            src="static/images/fruit.jpg"
+            class="rounded mx-auto d-block"
+            alt="..."
+        /></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>FruitNinja</h5>
+          <p>Let's Cut Fruit using Hand</p>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+        data-bs-interval="2000"
+        style="background-color: #76f5f5"
+      >
+        <a href="./subwaysuffer"
+          ><img
+            class="img"
+            style="border: 2px solid black; border-radius: 5px"
+            src="static/images/subwaysuffer.jpg"
+            class="rounded mx-auto d-block"
+            alt="..."
+        /></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Subwaysuffer</h5>
+          <p>Let's Runaway from Train Inspector</p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<img style="width: 0" src="{{ url_for('video_feed_subwaysuffer') }}" />
+{% endblock %}
+<!-- </body>
+
+</html> -->

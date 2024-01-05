@@ -1,0 +1,75 @@
+{% extends "layout.html" %} {% block content %}
+
+<h1 style="text-align: center; color: rgb(220, 20, 137)">
+  Real-time Hand 1vs1 PingPong
+</h1>
+<div
+  class="bg-dark bg-gradient"
+  style="
+    border: 2px solid gray;
+    border-radius: 5px;
+    position: relative;
+    margin-inline: 2%;
+    width: 1300px;
+    height: 730px;
+    left: 110px;
+  "
+>
+  <img
+    style="border-radius: 5px; position: absolute; top: 3px; left: 8px"
+    src="{{ url_for('video_feed_1vs1pong') }}"
+  />
+</div>
+<hr />
+<div style="margin: 2%" class="d-flex justify-content-evenly">
+  <button class="btn btn-outline-secondary" onclick="fun()" type="button">
+    Reset
+  </button>
+  <button class="btn btn-outline-secondary" onclick="home()" type="button">
+    BackToHome
+  </button>
+</div>
+<hr />
+<div
+  class="bg-dark bg-gradient"
+  style="margin-inline: 2%; border: 2px solid gray; border-radius: 5px"
+>
+  <div
+    style="
+      box-sizing: content-box;
+      color: whitesmoke;
+      margin-inline: 10%;
+      margin-block: 2%;
+      padding-left: 10px;
+      padding-top: 9px;
+      border: 2px solid gray;
+      border-radius: 5px;
+    "
+  >
+    <!-- <p style=" text-align: center; color: whitesmoke;">Tips</p> -->
+
+    <p>This Pingpong game is for Two player</p>
+    <p>
+      Control this ping-pong game using his left-hand of Player1 and right-hand
+      of Player2
+    </p>
+    <p>Left-hand is use to move left-bat</p>
+    <p>Right-hand is use to move right-bat</p>
+    <p>Current Score will display at bottom of each player</p>
+    <p>After Finishing the game Final Score will display for each player</p>
+  </div>
+</div>
+
+<script>
+  function fun() {
+    document.location.reload();
+  }
+
+  function home() {
+    document.location.href = "http://127.0.0.1:5000";
+  }
+</script>
+
+<!-- <img src="{{ url_for('video_feed_pong') }}" width="640" height="480"> -->
+
+{% endblock %}

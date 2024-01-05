@@ -1,0 +1,100 @@
+{% extends "layout.html" %} {% block content %}
+
+<h1 style="text-align: center; color: rgb(0, 0, 0)">
+  Real-time Hand FruitNinja
+</h1>
+<div
+  class="bg-dark bg-gradient"
+  style="
+    border: 2px solid gray;
+    border-radius: 5px;
+    position: relative;
+    left: 140px;
+    margin-inline: 20%;
+    width: 660px;
+    height: 499px;
+  "
+>
+  <img
+    style="
+      width: 650px;
+      border-radius: 5px;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+    "
+    src="{{ url_for('video_feed_subwaysuffer') }}"
+  />
+</div>
+<hr />
+<div style="margin: 2%" class="d-flex justify-content-evenly">
+  <button class="btn btn-outline-secondary" onclick="fun()" type="button">
+    Reset
+  </button>
+  <button class="btn btn-outline-secondary" onclick="openWin()" type="button">
+    OpenGame
+  </button>
+  <button class="btn btn-outline-secondary" onclick="closeWin()" type="button">
+    CloseGame
+  </button>
+  <button class="btn btn-outline-secondary" onclick="home()" type="button">
+    BackToHome
+  </button>
+</div>
+<hr />
+<div
+  class="bg-dark bg-gradient"
+  style="margin-inline: 2%; border: 2px solid gray; border-radius: 5px"
+>
+  <div
+    style="
+      box-sizing: content-box;
+      color: whitesmoke;
+      margin-inline: 10%;
+      margin-block: 2%;
+      padding-left: 10px;
+      padding-top: 9px;
+      border: 2px solid gray;
+      border-radius: 5px;
+    "
+  >
+    <!-- <p style=" text-align: center; color: whitesmoke;">Tips</p> -->
+
+    <p>This Subwaysuffer game is only for one player</p>
+    <p>For open Game winddow just Click OpenGame Button</p>
+    <p>
+      Control this Subwaysuffer game using left-hand or right-hand ,But not both
+      same Time
+    </p>
+    <p>
+      Just use index and middle finger an swipe which direction want to move
+    </p>
+    <p>For close Game window just Click CloseGame Button</p>
+  </div>
+</div>
+
+<script>
+  function fun() {
+    document.location.reload();
+  }
+
+  function home() {
+    document.location.href = "http://127.0.0.1:5000";
+  }
+
+  function openWin() {
+    myWindow = window.open(
+      "https://poki.com/en/g/subway-surfers",
+      "_blank",
+      "width=800, height=500,top=100,left=200"
+    );
+  }
+
+  function closeWin() {
+    myWindow.close();
+  }
+</script>
+
+<!-- <img src="{{ url_for('video_feed_pong') }}" width="640" height="480"> -->
+
+{% endblock %}
